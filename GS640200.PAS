@@ -69,9 +69,6 @@ Type
   StartCur,EndCur:Byte; { Ligne de d‚part et de fin du curseur}
  End;
 
-Procedure PhysVideo;
-Procedure DataVideo;
-
 Procedure BarChrHor(X1,Y,X2:Byte;Chr:Char);
 Procedure BarChrVer(X,Y1,Y2:Byte;Chr:Char);
 Procedure BarSpcHor(X1,Y,X2,Attr:Byte);
@@ -131,6 +128,8 @@ Procedure SetVisualPg(Pg:Byte);
 
 IMPLEMENTATION
 
+Procedure PhysVideo;Forward;
+Procedure DataVideo;Forward;
 Procedure RawTxtY;Forward;
 Procedure RawY;Forward;
 Procedure RealRawY;Forward;
